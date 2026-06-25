@@ -43,5 +43,113 @@ h3{
     display: block;
     width: 100%;
     padding: 12px;
-    background-color: ;
+    background-color: #f39c12;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+#b-agregar:hover{
+    background-color: #e67e22;
+}
+.mensaje{
+    display: none;
+    background-color: #f1c40f;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin: 10px 20px;
+    border-radius: 5px;
+    border-left: 5px solid #e67e22;
+}
+form{
+    border: 2px solid #f9e79f;
+    background-color: #fffbf0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+#agregar, #modificar{
+    display: none;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+input[type="text"]:focus{
+    border-color: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.4);
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+input[type="submit"]:hover{
+    background-color: #d35400;
+}
+
+.juego{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #f5b041;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.juego .info p{
+    margin-bottom: 5px;
+    color: #444;
+}
+.juego .botones{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.btn-modificar, .btn-eliminar {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background 0.3s;
+}
+
+.btn-modificar {
+    background-color: #f39c12;
+}
+
+.btn-modificar:hover {
+    background-color: #d4ac0d;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c;
+}
+
+.btn-eliminar:hover {
+    background-color: #c0392b;
 }
