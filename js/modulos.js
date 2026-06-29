@@ -24,3 +24,12 @@ const mostrarJuegos = (juegos = null) => {
         </div>`;
     });
 };
+
+// Agrega un nuevo juego al array y lo guarda
+const agregarJuego = (nuevoJuego) => {
+    const juegos = obtenerJuegos();
+    juegos.push(nuevoJuego);
+    guardarJuegos(juegos);
+    mostrarJuegos();
+    mostrarMensaje("Juego agregado con éxito");
+};
